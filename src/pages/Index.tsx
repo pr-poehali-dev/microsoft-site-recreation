@@ -23,17 +23,17 @@ const Index = () => {
       <section className="pt-32 pb-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+            <h2 className="text-6xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
               Добро пожаловать в будущее технологий
             </h2>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-muted-foreground mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}>
               Создаём инновационные решения, которые меняют мир к лучшему
             </p>
-            <div className="flex gap-4 justify-center flex-wrap">
-              <Button size="lg" className="text-base px-8">
+            <div className="flex gap-4 justify-center flex-wrap animate-fade-in" style={{ animationDelay: '0.4s', opacity: 0, animationFillMode: 'forwards' }}>
+              <Button size="lg" className="text-base px-8 hover-scale">
                 Узнать больше
               </Button>
-              <Button size="lg" variant="outline" className="text-base px-8">
+              <Button size="lg" variant="outline" className="text-base px-8 hover-scale">
                 Наши продукты
               </Button>
             </div>
@@ -44,7 +44,7 @@ const Index = () => {
       <section id="about" className="py-20 px-6 bg-secondary/30">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-slide-in-left">
               <h3 className="text-4xl font-bold mb-6">О компании</h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                 Мы — глобальная технологическая компания, создающая программное обеспечение, 
@@ -69,23 +69,23 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <Card className="p-6 hover-scale">
+            <div className="grid grid-cols-2 gap-4 animate-slide-in-right">
+              <Card className="p-6 hover-scale transition-all duration-300 hover:shadow-xl">
                 <Icon name="Sparkles" className="text-primary mb-4" size={32} />
                 <h4 className="font-semibold mb-2">Инновации</h4>
                 <p className="text-sm text-muted-foreground">Передовые технологии для бизнеса</p>
               </Card>
-              <Card className="p-6 hover-scale">
+              <Card className="p-6 hover-scale transition-all duration-300 hover:shadow-xl">
                 <Icon name="Shield" className="text-primary mb-4" size={32} />
                 <h4 className="font-semibold mb-2">Безопасность</h4>
                 <p className="text-sm text-muted-foreground">Защита данных на всех уровнях</p>
               </Card>
-              <Card className="p-6 hover-scale">
+              <Card className="p-6 hover-scale transition-all duration-300 hover:shadow-xl">
                 <Icon name="Users" className="text-primary mb-4" size={32} />
                 <h4 className="font-semibold mb-2">Сообщество</h4>
                 <p className="text-sm text-muted-foreground">Миллиарды пользователей по всему миру</p>
               </Card>
-              <Card className="p-6 hover-scale">
+              <Card className="p-6 hover-scale transition-all duration-300 hover:shadow-xl">
                 <Icon name="Rocket" className="text-primary mb-4" size={32} />
                 <h4 className="font-semibold mb-2">Развитие</h4>
                 <p className="text-sm text-muted-foreground">Постоянное совершенствование</p>
@@ -98,14 +98,14 @@ const Index = () => {
       <section id="windows11" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 animate-slide-in-left">
               <img 
                 src="https://cdn.poehali.dev/projects/a1f11940-11b4-4361-8742-5bafa5d4eac3/files/d57c84c0-4910-4a13-9a94-0695c13871bf.jpg" 
                 alt="Windows 11"
                 className="rounded-lg shadow-2xl"
               />
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 animate-slide-in-right">
               <div className="inline-block bg-primary/10 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">
                 Актуальная версия
               </div>
@@ -133,13 +133,13 @@ const Index = () => {
                 </li>
               </ul>
               <div className="flex gap-4 flex-wrap">
-                <Button size="lg" className="text-base" asChild>
+                <Button size="lg" className="text-base hover-scale transition-all duration-300 hover:shadow-lg" asChild>
                   <a href="https://www.microsoft.com/ru-ru/software-download/windows11" target="_blank" rel="noopener noreferrer">
                     <Icon name="Download" className="mr-2" size={20} />
                     Скачать Windows 11
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base">
+                <Button size="lg" variant="outline" className="text-base hover-scale transition-all duration-300">
                   Подробнее
                 </Button>
               </div>
@@ -151,7 +151,7 @@ const Index = () => {
       <section id="windows10" className="py-20 px-6 bg-secondary/30">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-slide-in-left">
               <div className="inline-block bg-muted text-muted-foreground px-4 py-1 rounded-full text-sm font-medium mb-4">
                 Стабильная версия
               </div>
@@ -179,18 +179,18 @@ const Index = () => {
                 </li>
               </ul>
               <div className="flex gap-4 flex-wrap">
-                <Button size="lg" className="text-base" asChild>
+                <Button size="lg" className="text-base hover-scale transition-all duration-300 hover:shadow-lg" asChild>
                   <a href="https://www.microsoft.com/ru-ru/software-download/windows10" target="_blank" rel="noopener noreferrer">
                     <Icon name="Download" className="mr-2" size={20} />
                     Скачать Windows 10
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base">
+                <Button size="lg" variant="outline" className="text-base hover-scale transition-all duration-300">
                   Подробнее
                 </Button>
               </div>
             </div>
-            <div>
+            <div className="animate-slide-in-right">
               <img 
                 src="https://cdn.poehali.dev/projects/a1f11940-11b4-4361-8742-5bafa5d4eac3/files/9b66b852-cd4b-4eda-bf36-8765c21e37f3.jpg" 
                 alt="Windows 10"
@@ -205,14 +205,14 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-blue-500/5 to-purple-500/5"></div>
         <div className="max-w-7xl mx-auto relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="order-2 md:order-1">
+            <div className="order-2 md:order-1 animate-slide-in-left">
               <img 
                 src="https://cdn.poehali.dev/projects/a1f11940-11b4-4361-8742-5bafa5d4eac3/files/250f42ef-7a63-49fd-8b62-bd6876ee1667.jpg" 
                 alt="Windows 12 Beta"
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl animate-float"
               />
             </div>
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 animate-slide-in-right">
               <div className="inline-block bg-gradient-to-r from-primary to-purple-600 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
                 Бета-версия
               </div>
@@ -242,11 +242,11 @@ const Index = () => {
                 </li>
               </ul>
               <div className="flex gap-4 flex-wrap">
-                <Button size="lg" className="text-base bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90">
+                <Button size="lg" className="text-base bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 hover-scale transition-all duration-300 hover:shadow-lg">
                   <Icon name="Rocket" className="mr-2" size={20} />
                   Присоединиться к бета-тестированию
                 </Button>
-                <Button size="lg" variant="outline" className="text-base">
+                <Button size="lg" variant="outline" className="text-base hover-scale transition-all duration-300">
                   Узнать больше
                 </Button>
               </div>

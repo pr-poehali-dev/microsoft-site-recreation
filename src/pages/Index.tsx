@@ -133,9 +133,11 @@ const Index = () => {
                 </li>
               </ul>
               <div className="flex gap-4 flex-wrap">
-                <Button size="lg" className="text-base">
-                  <Icon name="Download" className="mr-2" size={20} />
-                  Скачать Windows 11
+                <Button size="lg" className="text-base" asChild>
+                  <a href="https://www.microsoft.com/ru-ru/software-download/windows11" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" className="mr-2" size={20} />
+                    Скачать Windows 11
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="text-base">
                   Подробнее
@@ -177,9 +179,11 @@ const Index = () => {
                 </li>
               </ul>
               <div className="flex gap-4 flex-wrap">
-                <Button size="lg" className="text-base">
-                  <Icon name="Download" className="mr-2" size={20} />
-                  Скачать Windows 10
+                <Button size="lg" className="text-base" asChild>
+                  <a href="https://www.microsoft.com/ru-ru/software-download/windows10" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Download" className="mr-2" size={20} />
+                    Скачать Windows 10
+                  </a>
                 </Button>
                 <Button size="lg" variant="outline" className="text-base">
                   Подробнее
